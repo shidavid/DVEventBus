@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseViewController">
+            <connections>
+                <outlet property="btnA" destination="xOp-FO-Vjh" id="dLf-kb-BRF"/>
+                <outlet property="btnB" destination="99h-MD-BYl" id="GA7-7b-c2Q"/>
+                <outlet property="btnBase" destination="xa3-bk-MB3" id="Lbf-1n-JNu"/>
+                <outlet property="lblMessageA" destination="ZN2-Gp-NrT" id="osy-vN-IMj"/>
+                <outlet property="lblMessageB" destination="ovD-o3-lGv" id="gIJ-MW-zeh"/>
+                <outlet property="lblMessageBase" destination="Lzd-ko-Kue" id="IlM-JN-wx8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZN2-Gp-NrT">
+                    <rect key="frame" x="113" y="121" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOp-FO-Vjh">
+                    <rect key="frame" x="20" y="84" width="374" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="AAA 发送事件kEVENT_VM_BBB_RECEIVE_MESSAGE"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovD-o3-lGv">
+                    <rect key="frame" x="112.5" y="214" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99h-MD-BYl">
+                    <rect key="frame" x="20" y="177" width="374" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="BBB 发送事件kEVENT_VM_AAA_RECEIVE_MESSAGE"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzd-ko-Kue">
+                    <rect key="frame" x="205" y="327" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xa3-bk-MB3">
+                    <rect key="frame" x="20" y="290" width="374" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="点击跳转 SubViewController"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AAA收到信息:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aX-hM-6ep">
+                    <rect key="frame" x="20" y="121" width="83" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BBB收到信息:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mq6-tY-JgR">
+                    <rect key="frame" x="20" y="214" width="82.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BaseViewController收到信息:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAm-Jn-IZP">
+                    <rect key="frame" x="20" y="327" width="175" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="xa3-bk-MB3" secondAttribute="trailing" constant="20" id="2wC-SB-yMC"/>
+                <constraint firstItem="ovD-o3-lGv" firstAttribute="leading" secondItem="Mq6-tY-JgR" secondAttribute="trailing" constant="10" id="9ja-mU-aoS"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="xOp-FO-Vjh" secondAttribute="trailing" constant="20" id="9q3-ZL-I8k"/>
+                <constraint firstItem="xa3-bk-MB3" firstAttribute="top" secondItem="Mq6-tY-JgR" secondAttribute="bottom" constant="60" id="A0R-Ao-uom"/>
+                <constraint firstItem="ZN2-Gp-NrT" firstAttribute="leading" secondItem="2aX-hM-6ep" secondAttribute="trailing" constant="10" id="FIm-ro-ytw"/>
+                <constraint firstItem="ovD-o3-lGv" firstAttribute="leading" secondItem="Mq6-tY-JgR" secondAttribute="trailing" constant="10" id="HZ2-J0-wkN"/>
+                <constraint firstItem="Lzd-ko-Kue" firstAttribute="top" secondItem="xa3-bk-MB3" secondAttribute="bottom" constant="10" id="LMa-kM-Tk9"/>
+                <constraint firstItem="lAm-Jn-IZP" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="Px9-Zk-P45"/>
+                <constraint firstItem="99h-MD-BYl" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="SD5-rz-1Md"/>
+                <constraint firstItem="99h-MD-BYl" firstAttribute="top" secondItem="2aX-hM-6ep" secondAttribute="bottom" constant="40" id="SXq-ac-7ss"/>
+                <constraint firstItem="Mq6-tY-JgR" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="XV7-r4-VJ9"/>
+                <constraint firstItem="Lzd-ko-Kue" firstAttribute="leading" secondItem="lAm-Jn-IZP" secondAttribute="trailing" constant="10" id="YBc-ok-vQg"/>
+                <constraint firstItem="ZN2-Gp-NrT" firstAttribute="top" secondItem="xOp-FO-Vjh" secondAttribute="bottom" constant="10" id="dCy-Vx-XB5"/>
+                <constraint firstItem="2aX-hM-6ep" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="mbF-p6-Shh"/>
+                <constraint firstItem="lAm-Jn-IZP" firstAttribute="top" secondItem="xa3-bk-MB3" secondAttribute="bottom" constant="10" id="mpz-UQ-C8H"/>
+                <constraint firstItem="xa3-bk-MB3" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="pYB-Fs-xgJ"/>
+                <constraint firstItem="xOp-FO-Vjh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="r0n-rh-xlj"/>
+                <constraint firstItem="ovD-o3-lGv" firstAttribute="top" secondItem="99h-MD-BYl" secondAttribute="bottom" constant="10" id="rhg-lR-p8n"/>
+                <constraint firstItem="2aX-hM-6ep" firstAttribute="top" secondItem="xOp-FO-Vjh" secondAttribute="bottom" constant="10" id="sBB-gu-vsC"/>
+                <constraint firstItem="xOp-FO-Vjh" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="40" id="tNI-Ay-dii"/>
+                <constraint firstItem="Mq6-tY-JgR" firstAttribute="top" secondItem="99h-MD-BYl" secondAttribute="bottom" constant="10" id="vfR-pd-9ja"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="99h-MD-BYl" secondAttribute="trailing" constant="20" id="weX-KX-YfY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="131.8840579710145" y="118.52678571428571"/>
+        </view>
+    </objects>
+</document>
