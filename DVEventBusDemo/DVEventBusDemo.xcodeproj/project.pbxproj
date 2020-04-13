@@ -49,7 +49,6 @@
 		FF91B733244436E200EDEA2A /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF91B731244436E200EDEA2A /* BaseViewController.xib */; };
 		FF91B73E24443C6300EDEA2A /* SubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF91B73C24443C6300EDEA2A /* SubViewController.m */; };
 		FF91B73F24443C6300EDEA2A /* SubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF91B73D24443C6300EDEA2A /* SubViewController.xib */; };
-		FF91B74224443C7A00EDEA2A /* SubViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF91B74124443C7A00EDEA2A /* SubViewModel.m */; };
 		FF91B74524443D5C00EDEA2A /* MainTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FF91B74424443D5C00EDEA2A /* MainTableDataSource.m */; };
 		FF91B7482444415B00EDEA2A /* DVDataBindKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF91B7472444415B00EDEA2A /* DVDataBindKit.framework */; };
 		FF9A765F2444048D00C93FDF /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9A765E2444048D00C93FDF /* UserModel.m */; };
@@ -170,8 +169,6 @@
 		FF91B73B24443C6300EDEA2A /* SubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubViewController.h; sourceTree = "<group>"; };
 		FF91B73C24443C6300EDEA2A /* SubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubViewController.m; sourceTree = "<group>"; };
 		FF91B73D24443C6300EDEA2A /* SubViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubViewController.xib; sourceTree = "<group>"; };
-		FF91B74024443C7A00EDEA2A /* SubViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubViewModel.h; sourceTree = "<group>"; };
-		FF91B74124443C7A00EDEA2A /* SubViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubViewModel.m; sourceTree = "<group>"; };
 		FF91B74324443D5C00EDEA2A /* MainTableDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableDataSource.h; sourceTree = "<group>"; };
 		FF91B74424443D5C00EDEA2A /* MainTableDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableDataSource.m; sourceTree = "<group>"; };
 		FF91B7472444415B00EDEA2A /* DVDataBindKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DVDataBindKit.framework; sourceTree = "<group>"; };
@@ -500,8 +497,6 @@
 				FFC1747524444651000ED098 /* AAAViewModel.m */,
 				FFC174772444465D000ED098 /* BBBViewModel.h */,
 				FFC174782444465D000ED098 /* BBBViewModel.m */,
-				FF91B74024443C7A00EDEA2A /* SubViewModel.h */,
-				FF91B74124443C7A00EDEA2A /* SubViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -733,7 +728,6 @@
 				FF90E2DB241F774700BCA018 /* UIViewController+Common.m in Sources */,
 				FF90E345241F85ED00BCA018 /* AppDelegate+Notification.m in Sources */,
 				FF90E2DD241F774700BCA018 /* UITextField+Common.m in Sources */,
-				FF91B74224443C7A00EDEA2A /* SubViewModel.m in Sources */,
 				FF90E33B241F845300BCA018 /* DVRuntime.m in Sources */,
 				FF90E2D9241F774700BCA018 /* UIToolbar+Common.m in Sources */,
 			);
