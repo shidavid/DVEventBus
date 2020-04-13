@@ -48,6 +48,7 @@
 
 - (void)bindViewModel {
     
+    // 数据双向绑定
     DVDataBind
     ._inout(self.lblMessageA, @"text")
     ._inout(self.aaaViewModel, @"message");
@@ -56,6 +57,7 @@
     ._inout(self.lblMessageB, @"text")
     ._inout(self.bbbViewModel, @"message");
     
+    // Button绑定方法
     [self.btnA addTarget:self.aaaViewModel action:@selector(sendMessageToBBB) forControlEvents:UIControlEventTouchUpInside];
     [self.btnB addTarget:self.bbbViewModel action:@selector(sendMessageToAAA) forControlEvents:UIControlEventTouchUpInside];
     [self.btnBase addTarget:self action:@selector(onClickForPushSubViewController) forControlEvents:UIControlEventTouchUpInside];
