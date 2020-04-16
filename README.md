@@ -1,5 +1,6 @@
 ### 1.前言:
-以往的事件总线都是以NSNotification为基础, 单向传递数据, 返回数据只能异步回调返回, 而'performSelector'有参数限制, 然后发现NSInvocation更加强大;
+现在模块间很多用事件总线解耦。以往的事件总线都是单向传递数据, 返回数据只能异步回调; 有时我想发送一个数据到某模块处理完返回结果才进行下一步骤, 如果一个地方出现多次请求数据，异步嵌套代码可读性很低;  想用 'performSelector' 来解耦函数调用，但有参数限制, 然后发现NSInvocation更加强大，所以选用NSInvocation来实现事件总线。
+
 |区别| NSInvocation | performSelector | NSNotification |
 |---| --- | --- | --- |
 |参数| 可多参数 | 限制参数数量 |用userInfo传入参数|
@@ -174,19 +175,19 @@ void(^successBlock)(BOOL) = ^(BOOL status) {
 @end
 ```
 
-##### 2.2 注册对象事件
+##### 3.2.1 注册对象事件
 ```
 // 用这个方法注册, 对象必须继承'DVEventBusDelegate' 和 实现'event_method_map'
 [DVEventSubscriber registerEvents:object];
 ```
 
-##### 2.2.2 第二种订阅对象事件方法: 
+##### 3.2.2 第二种订阅对象事件方法: 
 ##### 也可以用下面方法订阅对象事件，对象不用继承'DVEventBusDelegate'， 如果事件多还是建议使用上面方法
 ```
 [DVEventSubscriber addEvent:kEVENT_DEMO_ADD subscriber:object action:@selector(addWithA:b:)];
 ```
 
-##### 2.3 发布对象事件 ：发布对象事件是执行对象方法
+##### 3.3 发布对象事件 ：发布对象事件是执行对象方法
 ```
 // 同步返回结果, 若有参数, 结尾要nil
 NSNumber *count = [DVEventPublisher publishEvent:kEVENT_DEMO_ADD params:@(1), @(2), nil];
