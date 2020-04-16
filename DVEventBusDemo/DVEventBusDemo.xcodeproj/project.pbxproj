@@ -58,6 +58,7 @@
 		FF9A76742444087A00C93FDF /* DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF9A76722444087A00C93FDF /* DemoViewController.xib */; };
 		FFC1747624444651000ED098 /* AAAViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC1747524444651000ED098 /* AAAViewModel.m */; };
 		FFC174792444465D000ED098 /* BBBViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC174782444465D000ED098 /* BBBViewModel.m */; };
+		FFC90CAA2448158900FD1C0E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FFC90CA72448158900FD1C0E /* README.md */; };
 		FFDE3E18244455EB00B1CD95 /* DVEventBusKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC1747124444467000ED098 /* DVEventBusKit.framework */; };
 		FFDE3E19244455EB00B1CD95 /* DVEventBusKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFC1747124444467000ED098 /* DVEventBusKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -187,6 +188,7 @@
 		FFC1747524444651000ED098 /* AAAViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAAViewModel.m; sourceTree = "<group>"; };
 		FFC174772444465D000ED098 /* BBBViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBBViewModel.h; sourceTree = "<group>"; };
 		FFC174782444465D000ED098 /* BBBViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBBViewModel.m; sourceTree = "<group>"; };
+		FFC90CA72448158900FD1C0E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,6 +336,7 @@
 		FF90E2FA241F775A00BCA018 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				FFC90CA72448158900FD1C0E /* README.md */,
 				FF90E1C5241F616200BCA018 /* main.m */,
 			);
 			path = Other;
@@ -676,6 +679,7 @@
 				3E60616924227035000D0E64 /* password.png in Resources */,
 				FF90E1C0241F616100BCA018 /* Assets.xcassets in Resources */,
 				FF91B733244436E200EDEA2A /* BaseViewController.xib in Resources */,
+				FFC90CAA2448158900FD1C0E /* README.md in Resources */,
 				FF65329F2420A4F800D01F1D /* icon-dog.jpg in Resources */,
 				FF91B73F24443C6300EDEA2A /* SubViewController.xib in Resources */,
 			);

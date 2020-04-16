@@ -19,9 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    // 注册类事件，一般在APP启动时注册
-    [DVEventSubscriber registerClassEvents:[DemoService class]];
-    [DVEventSubscriber registerClassEvents:[DemoOtherService class]];
+  
 }
 
 

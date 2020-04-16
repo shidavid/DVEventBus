@@ -10,6 +10,24 @@
 
 @implementation DemoService
 
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken,^{
+        // 1. 注册方法1: 类必须继承'DVEventBusClassDelegate', 和实现 'event_classMethod_map'
+        [DVEventSubscriber registerClassEvents:[DemoService class]];
+        
+        
+        // 2. 注册方法2:
+//        [DVEventSubscriber addClasslEvent:kEVENT_SERVICE_DEMO_LOGIN subscriber:[DemoService class] action:@selector(loginWithUserName:password:success:)];
+//        [DVEventSubscriber addClasslEvent:kEVENT_SERVICE_DEMO_ADD subscriber:[DemoService class] action:@selector(addWithA:b:)];
+//        [DVEventSubscriber addClasslEvent:kEVENT_SERVICE_DEMO_GET_STRING subscriber:[DemoService class] action:@selector(getString)];
+//        [DVEventSubscriber addClasslEvent:kEVENT_SERVICE_DEMO_GET_OBJECT subscriber:[DemoService class] action:@selector(getObject)];
+//        [DVEventSubscriber addClasslEvent:kEVENT_SERVICE_DEMO_MUTIL_METHOD subscriber:[DemoService class] action:@selector(mutilMethod1)];
+//        [DVEventSubscriber addClasslEvent:kEVENT_SERVICE_DEMO_MUTIL_METHOD subscriber:[DemoService class] action:@selector(mutilMethod2)];
+//        [DVEventSubscriber addClasslEvent:kEVENT_SERVICE_DEMO_MUTIL_METHOD subscriber:[DemoService class] action:@selector(mutilMethod3)];
+    });
+}
+
 // 类事件 绑定 类方法
 + (NSDictionary<NSString *,NSString *> *)event_classMethod_map {
     return @{
