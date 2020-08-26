@@ -1,0 +1,6 @@
+framework module DVEventBusKit {
+  umbrella header "DVEventBusKit.h"
+
+  export *
+  module * { export * }
+}
